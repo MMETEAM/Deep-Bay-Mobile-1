@@ -4,7 +4,7 @@
 //
 //  Created by Michael Hammond-Todd on 2018-05-21.
 //  Copyright © 2018 MMEDesignStudio. All rights reserved.
-//
+//  This is the introductory ViewController. Unless there is a specific function with the app such as the camera or text activities by the user, all ViewControllers are generic. 
 
 import UIKit
 
