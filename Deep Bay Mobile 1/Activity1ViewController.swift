@@ -6,8 +6,13 @@
 //  Copyright © 2018 MMEDesignStudio. All rights reserved.
 //  This is the ViewController for the first activity.
 
+import AVKit
+import AVFoundation
+import MobileCoreServices
 import Foundation
 import UIKit
+
+// all the movie related code is commented out
 
 class Activity1ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -24,68 +29,96 @@ class Activity1ViewController: UIViewController, UINavigationControllerDelegate,
     
     
     @IBAction func takePhotoButton(_ sender: Any) {
+//        // use this to record a movie
+//        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+//            // NOTE: video also needs NSMicrophoneUsageDescription key in Info.plist
+//            let imagePickerController = UIImagePickerController()
+//            imagePickerController.delegate = self
+//            imagePickerController.sourceType = .camera
+//            imagePickerController.mediaTypes = [kUTTypeMovie as String]
+//            imagePickerController.videoMaximumDuration = 10 // or whatever you want
+//            imagePickerController.videoQuality = .typeMedium
+//            imagePickerController.allowsEditing = false
+//            present(imagePickerController, animated: true, completion: nil)
+//        }
+        
+        // use this to take a picture
         imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         imagePickerController.sourceType = .camera
         present(imagePickerController, animated: true, completion: nil)
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        imagePickerController.dismiss(animated: true, completion: nil)
+        // if just taking picture
         cameraView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-    }
-    func saveImage(imageName: String){
-        //create an instance of the FileManager
-        _ = FileManager.default
-        //get the image path
-        _ = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
-        //get the image we took with camera
-        let image = cameraView.image!
-        //get the PNG data for this image
-        _ = UIImagePNGRepresentation(image)
-        //store it in the document directory    fileManager.createFile(atPath: imagePath as String, contents: data, attributes: nil)
+        dismiss(animated: true, completion: nil)
+        
+//        // can be used for movie or picture
+//        let mediaType = info[UIImagePickerControllerMediaType] as! String
+//        if mediaType == kUTTypeMovie as String, let movieURL = info[UIImagePickerControllerMediaURL] as? URL {
+//            print("VIDEO URL: \(movieURL)")
+//            DBFileManager.shared.saveMovie(movieURL, movieName: "Activity1.mov")
+//        } else {
+//            cameraView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+//        }
+//        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveActivity1(_ sender: Any) {
+        // save the text
         output1.text = input1.text
         UserDefaults.standard.set(input1.text, forKey: "myAnswer")
         input1.text = "";
-        do {
-            saveImage(imageName: "Activity1.png")
-            
-        }
+        
+        // save the image
+        DBFileManager.shared.saveImage(cameraView.image!, imageName: "Activity1.png")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the    view.getImage(imageName: "Activity1.png")
+        // set the text if saved
+        if let x = UserDefaults.standard.object(forKey: "myAnswer") as? String
+        {
+            output1.text = x;
+        }
+        
+        // set the image if saved
+        getImage(imageName: "Activity1.png")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func viewDidAppear(_ animated: Bool)
-    {
-        if let x = UserDefaults.standard.object(forKey: "myAnswer") as? String
-        {
-            output1.text = x;
-            
+
+    func getImage(imageName: String) {
+        if let image = DBFileManager.shared.retrieveImage(imageName: imageName) {
+            cameraView.image = image
+        } else {
+            print("Panic! No Image!")
         }
-        func getImage(imageName: String){
-            
-            let fileManager = FileManager.default
-            let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
-            if fileManager.fileExists(atPath: imagePath){
-                cameraView.image = UIImage(contentsOfFile: imagePath)
-            }else{
-                print("Panic! No Image!")
-            }
-            
-        }
-        
     }
     
+//    func getMovie() {
+//        if let movie = DBFileManager.shared.retrieveMovie(movieName: "Activity1.mov") {
+//            playMovie(movie)
+//        }
+//    }
+//
+//    func playMovie(_ movieUrl: URL) {
+//        // Create the view controller and player
+//        let moviePlayerViewController = AVPlayerViewController()
+//        let moviePlayer = AVPlayer(url: movieUrl)
+//
+//        // Initialize the AVPlayer
+//        moviePlayerViewController.player = moviePlayer
+//
+//        // Present movie player and play when completion
+//        self.present(moviePlayerViewController, animated: false, completion: {
+//            moviePlayerViewController.player?.play()
+//        })
+//    }
 }
 

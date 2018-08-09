@@ -21,10 +21,17 @@
 		2916E45520B4C1F3004A4781 /* Clam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2916E45420B4C1F3004A4781 /* Clam.jpg */; };
 		2916E45720B4C223004A4781 /* mussel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2916E45620B4C223004A4781 /* mussel.jpg */; };
 		2916E45920B4C262004A4781 /* oyster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2916E45820B4C262004A4781 /* oyster.jpg */; };
-		2916E45B20B4C36C004A4781 /* Activity1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916E45A20B4C36C004A4781 /* Activity1ViewController.swift */; };
 		2916E47A20B4DBFF004A4781 /* introduction.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2916E45120B3AC4B004A4781 /* introduction.mp4 */; };
 		2916E47C20B4E4DB004A4781 /* iPad in Resources */ = {isa = PBXBuildFile; fileRef = 2916E47B20B4E4DB004A4781 /* iPad */; };
+		293F12DE20CA0BFD00CEF64E /* Activity3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F12DD20CA0BFD00CEF64E /* Activity3ViewController.swift */; };
+		29468831211CAF63007AC1EB /* DBFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29468830211CAF63007AC1EB /* DBFileManager.swift */; };
+		29468833211CAF9C007AC1EB /* Activity1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29468832211CAF9C007AC1EB /* Activity1ViewController.swift */; };
 		2961465B20C0BDE8009786FD /* Activity2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961465A20C0BDE8009786FD /* Activity2ViewController.swift */; };
+		2961465D20C0C222009786FD /* rockcrab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961465C20C0C221009786FD /* rockcrab.jpg */; };
+		2961465F20C0C23F009786FD /* seasnails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961465E20C0C23E009786FD /* seasnails.jpg */; };
+		2961466120C0C24A009786FD /* seaurchin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961466020C0C249009786FD /* seaurchin.jpg */; };
+		2961466320C0C262009786FD /* spotprawn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961466220C0C261009786FD /* spotprawn.jpg */; };
+		2961466520C0C27F009786FD /* seastar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961466420C0C27E009786FD /* seastar.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +52,16 @@
 		2916E45420B4C1F3004A4781 /* Clam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Clam.jpg; sourceTree = "<group>"; };
 		2916E45620B4C223004A4781 /* mussel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mussel.jpg; sourceTree = "<group>"; };
 		2916E45820B4C262004A4781 /* oyster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oyster.jpg; sourceTree = "<group>"; };
-		2916E45A20B4C36C004A4781 /* Activity1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity1ViewController.swift; sourceTree = "<group>"; };
 		2916E47B20B4E4DB004A4781 /* iPad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPad; sourceTree = "<group>"; };
+		293F12DD20CA0BFD00CEF64E /* Activity3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3ViewController.swift; sourceTree = "<group>"; };
+		29468830211CAF63007AC1EB /* DBFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBFileManager.swift; sourceTree = "<group>"; };
+		29468832211CAF9C007AC1EB /* Activity1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity1ViewController.swift; sourceTree = "<group>"; };
 		2961465A20C0BDE8009786FD /* Activity2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity2ViewController.swift; sourceTree = "<group>"; };
+		2961465C20C0C221009786FD /* rockcrab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rockcrab.jpg; sourceTree = "<group>"; };
+		2961465E20C0C23E009786FD /* seasnails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasnails.jpg; sourceTree = "<group>"; };
+		2961466020C0C249009786FD /* seaurchin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seaurchin.jpg; sourceTree = "<group>"; };
+		2961466220C0C261009786FD /* spotprawn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spotprawn.jpg; sourceTree = "<group>"; };
+		2961466420C0C27E009786FD /* seastar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seastar.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +97,11 @@
 				2916E3E120B395C4004A4781 /* AppDelegate.swift */,
 				2916E3E320B395C4004A4781 /* ViewController.swift */,
 				2916E44F20B3ABED004A4781 /* SecondViewController.swift */,
-				2916E45A20B4C36C004A4781 /* Activity1ViewController.swift */,
+				29468832211CAF9C007AC1EB /* Activity1ViewController.swift */,
 				2961465A20C0BDE8009786FD /* Activity2ViewController.swift */,
+				293F12DD20CA0BFD00CEF64E /* Activity3ViewController.swift */,
 				2916E3E520B395C4004A4781 /* Main.storyboard */,
+				29468830211CAF63007AC1EB /* DBFileManager.swift */,
 				2916E45420B4C1F3004A4781 /* Clam.jpg */,
 				2916E45220B3AEB5004A4781 /* Map.jpg */,
 				2916E45620B4C223004A4781 /* mussel.jpg */,
@@ -93,6 +109,11 @@
 				2916E44D20B3A9D9004A4781 /* Button.png */,
 				2916E45120B3AC4B004A4781 /* introduction.mp4 */,
 				2916E44920B3A733004A4781 /* Ocean Image.jpg */,
+				2961465C20C0C221009786FD /* rockcrab.jpg */,
+				2961465E20C0C23E009786FD /* seasnails.jpg */,
+				2961466020C0C249009786FD /* seaurchin.jpg */,
+				2961466420C0C27E009786FD /* seastar.jpg */,
+				2961466220C0C261009786FD /* spotprawn.jpg */,
 				2916E44720B3A676004A4781 /* Types of Shellfish.jpg */,
 				2916E45820B4C262004A4781 /* oyster.jpg */,
 				2916E47B20B4E4DB004A4781 /* iPad */,
@@ -166,13 +187,18 @@
 				2916E3EC20B395C6004A4781 /* LaunchScreen.storyboard in Resources */,
 				2916E44A20B3A733004A4781 /* Ocean Image.jpg in Resources */,
 				2916E45520B4C1F3004A4781 /* Clam.jpg in Resources */,
+				2961466520C0C27F009786FD /* seastar.jpg in Resources */,
 				2916E44E20B3A9D9004A4781 /* Button.png in Resources */,
+				2961466320C0C262009786FD /* spotprawn.jpg in Resources */,
 				2916E45920B4C262004A4781 /* oyster.jpg in Resources */,
 				2916E3FD20B3A072004A4781 /* ShellStartPic.png in Resources */,
+				2961465D20C0C222009786FD /* rockcrab.jpg in Resources */,
 				2916E45320B3AEB5004A4781 /* Map.jpg in Resources */,
 				2916E3E920B395C6004A4781 /* Assets.xcassets in Resources */,
 				2916E3E720B395C4004A4781 /* Main.storyboard in Resources */,
 				2916E45720B4C223004A4781 /* mussel.jpg in Resources */,
+				2961465F20C0C23F009786FD /* seasnails.jpg in Resources */,
+				2961466120C0C24A009786FD /* seaurchin.jpg in Resources */,
 				2916E44820B3A676004A4781 /* Types of Shellfish.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,10 +211,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2916E45020B3ABED004A4781 /* SecondViewController.swift in Sources */,
+				293F12DE20CA0BFD00CEF64E /* Activity3ViewController.swift in Sources */,
 				2961465B20C0BDE8009786FD /* Activity2ViewController.swift in Sources */,
-				2916E45B20B4C36C004A4781 /* Activity1ViewController.swift in Sources */,
 				2916E3E420B395C4004A4781 /* ViewController.swift in Sources */,
+				29468833211CAF9C007AC1EB /* Activity1ViewController.swift in Sources */,
 				2916E3E220B395C4004A4781 /* AppDelegate.swift in Sources */,
+				29468831211CAF63007AC1EB /* DBFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
