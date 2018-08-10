@@ -625,7 +625,7 @@
                         <viewLayoutGuide key="safeArea" id="kCT-bt-TA7"/>
                     </view>
                     <connections>
-                        <outlet property="cameraView" destination="9nW-so-Uay" id="Bb2-gu-Ylj"/>
+                        <outlet property="cameraView" destination="9nW-so-Uay" id="mrE-Yh-GNt"/>
                         <outlet property="input1" destination="e7c-6n-7FP" id="JS6-Fe-w4J"/>
                         <outlet property="output1" destination="hn9-my-6wD" id="f7y-fD-Ar3"/>
                     </connections>
