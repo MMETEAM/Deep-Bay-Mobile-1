@@ -4,6 +4,8 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Take pictures at Deep Bay.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Take movie at Deep Bay.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

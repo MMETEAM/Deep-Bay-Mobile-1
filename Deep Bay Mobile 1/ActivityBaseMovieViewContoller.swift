@@ -60,7 +60,7 @@ class ActivityBaseMovieViewController: UIViewController, UINavigationControllerD
         let mediaType = info[UIImagePickerControllerMediaType] as! String
         if mediaType == kUTTypeMovie as String, let movieURL = info[UIImagePickerControllerMediaURL] as? URL {
             print("VIDEO URL: \(movieURL)")
-            DBFileManager.shared.saveMovie(movieURL, movieName: "Activity1.mov")
+            DBFileManager.shared.saveMovie(movieURL, movieName: movieFileName)
         }
         dismiss(animated: true, completion: nil)
     }
@@ -68,7 +68,7 @@ class ActivityBaseMovieViewController: UIViewController, UINavigationControllerD
     // MARK: Activity Functions
 
     func getMovie() {
-        if let movie = DBFileManager.shared.retrieveMovie(movieName: "Activity1.mov") {
+        if let movie = DBFileManager.shared.retrieveMovie(movieName: movieFileName) {
             playMovie(movie)
         }
     }

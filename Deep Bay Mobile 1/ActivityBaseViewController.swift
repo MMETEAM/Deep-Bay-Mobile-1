@@ -31,13 +31,13 @@ class ActivityBaseViewController: UIViewController, UINavigationControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // set the text if saved
-        if let x = UserDefaults.standard.object(forKey: "myAnswer") as? String
+        if let x = UserDefaults.standard.object(forKey: textKey) as? String
         {
             output1.text = x;
         }
         
         // set the image if saved
-        getImage(imageName: "Activity1.png")
+        getImage(imageName: imageFileName)
     }
     
     // MARK: Actions
@@ -53,7 +53,7 @@ class ActivityBaseViewController: UIViewController, UINavigationControllerDelega
     
     @IBAction func enteredText(_ sender: Any) {
         // save the text
-        UserDefaults.standard.set(input1.text, forKey: "myAnswer")
+        UserDefaults.standard.set(input1.text, forKey: textKey)
     }
     
     // MARK: UIImagePickerControllerDelegate
@@ -62,7 +62,7 @@ class ActivityBaseViewController: UIViewController, UINavigationControllerDelega
         
         // save the image and display
         cameraView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        DBFileManager.shared.saveImage(cameraView.image!, imageName: "Activity1.png")
+        DBFileManager.shared.saveImage(cameraView.image!, imageName: imageFileName)
         dismiss(animated: true, completion: nil)
     }
     
