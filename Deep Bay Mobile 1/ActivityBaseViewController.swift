@@ -17,8 +17,8 @@ import UIKit
 // all the movie related code is commented out
 class ActivityBaseViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    var textKey: String { return "myAnswer"}
     var imageFileName: String { return "Activity1.png" }
-    var movieFileName: String { return "Activity1.mov"}
     
     @IBOutlet weak var output1: UILabel!
     @IBOutlet weak var input1: UITextField!
@@ -43,18 +43,6 @@ class ActivityBaseViewController: UIViewController, UINavigationControllerDelega
     // MARK: Actions
     
     @IBAction func takePhotoButton(_ sender: Any) {
-        //        // use this to record a movie
-        //        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-        //            // NOTE: video also needs NSMicrophoneUsageDescription key in Info.plist
-        //            let imagePickerController = UIImagePickerController()
-        //            imagePickerController.delegate = self
-        //            imagePickerController.sourceType = .camera
-        //            imagePickerController.mediaTypes = [kUTTypeMovie as String]
-        //            imagePickerController.videoMaximumDuration = 10 // or whatever you want
-        //            imagePickerController.videoQuality = .typeMedium
-        //            imagePickerController.allowsEditing = false
-        //            present(imagePickerController, animated: true, completion: nil)
-        //        }
         
         // use this to take a picture
         imagePickerController = UIImagePickerController()
@@ -63,33 +51,19 @@ class ActivityBaseViewController: UIViewController, UINavigationControllerDelega
         present(imagePickerController, animated: true, completion: nil)
     }
     
-    @IBAction func saveActivity1(_ sender: Any) {
+    @IBAction func enteredText(_ sender: Any) {
         // save the text
-        output1.text = input1.text
         UserDefaults.standard.set(input1.text, forKey: "myAnswer")
-        input1.text = "";
-        
-        // save the image
-        DBFileManager.shared.saveImage(cameraView.image!, imageName: "Activity1.png")
     }
     
     // MARK: UIImagePickerControllerDelegate
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        // if just taking picture
+        // save the image and display
         cameraView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        DBFileManager.shared.saveImage(cameraView.image!, imageName: "Activity1.png")
         dismiss(animated: true, completion: nil)
-        
-        //        // can be used for movie or picture
-        //        let mediaType = info[UIImagePickerControllerMediaType] as! String
-        //        if mediaType == kUTTypeMovie as String, let movieURL = info[UIImagePickerControllerMediaURL] as? URL {
-        //            print("VIDEO URL: \(movieURL)")
-        //            DBFileManager.shared.saveMovie(movieURL, movieName: "Activity1.mov")
-        //        } else {
-        //            cameraView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        //        }
-        //        dismiss(animated: true, completion: nil)
     }
     
     // MARK: Activity Functions
@@ -101,26 +75,7 @@ class ActivityBaseViewController: UIViewController, UINavigationControllerDelega
             print("Panic! No Image!")
         }
     }
-    
-    func getMovie() {
-        if let movie = DBFileManager.shared.retrieveMovie(movieName: "Activity1.mov") {
-            playMovie(movie)
-        }
-    }
-
-    func playMovie(_ movieUrl: URL) {
-        // Create the view controller and player
-        let moviePlayerViewController = AVPlayerViewController()
-        let moviePlayer = AVPlayer(url: movieUrl)
-
-        // Initialize the AVPlayer
-        moviePlayerViewController.player = moviePlayer
-
-        // Present movie player and play when completion
-        self.present(moviePlayerViewController, animated: false, completion: {
-            moviePlayerViewController.player?.play()
-        })
-    }
 }
+
 
 

@@ -25,6 +25,7 @@
 		2916E47C20B4E4DB004A4781 /* iPad in Resources */ = {isa = PBXBuildFile; fileRef = 2916E47B20B4E4DB004A4781 /* iPad */; };
 		29324576211E12030097C4EE /* ActivityBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29324575211E12030097C4EE /* ActivityBaseViewController.swift */; };
 		29324578211E13FE0097C4EE /* Activity4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29324577211E13FE0097C4EE /* Activity4ViewController.swift */; };
+		2932457A211E1EE40097C4EE /* ActivityBaseMovieViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29324579211E1EE40097C4EE /* ActivityBaseMovieViewContoller.swift */; };
 		293F12DE20CA0BFD00CEF64E /* Activity3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F12DD20CA0BFD00CEF64E /* Activity3ViewController.swift */; };
 		29468831211CAF63007AC1EB /* DBFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29468830211CAF63007AC1EB /* DBFileManager.swift */; };
 		29468833211CAF9C007AC1EB /* Activity1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29468832211CAF9C007AC1EB /* Activity1ViewController.swift */; };
@@ -57,6 +58,7 @@
 		2916E47B20B4E4DB004A4781 /* iPad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPad; sourceTree = "<group>"; };
 		29324575211E12030097C4EE /* ActivityBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBaseViewController.swift; sourceTree = "<group>"; };
 		29324577211E13FE0097C4EE /* Activity4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity4ViewController.swift; sourceTree = "<group>"; };
+		29324579211E1EE40097C4EE /* ActivityBaseMovieViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBaseMovieViewContoller.swift; sourceTree = "<group>"; };
 		293F12DD20CA0BFD00CEF64E /* Activity3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity3ViewController.swift; sourceTree = "<group>"; };
 		29468830211CAF63007AC1EB /* DBFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBFileManager.swift; sourceTree = "<group>"; };
 		29468832211CAF9C007AC1EB /* Activity1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity1ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				2916E3E320B395C4004A4781 /* ViewController.swift */,
 				2916E44F20B3ABED004A4781 /* SecondViewController.swift */,
 				29324575211E12030097C4EE /* ActivityBaseViewController.swift */,
+				29324579211E1EE40097C4EE /* ActivityBaseMovieViewContoller.swift */,
 				29468832211CAF9C007AC1EB /* Activity1ViewController.swift */,
 				2961465A20C0BDE8009786FD /* Activity2ViewController.swift */,
 				293F12DD20CA0BFD00CEF64E /* Activity3ViewController.swift */,
@@ -218,6 +221,7 @@
 			files = (
 				2916E45020B3ABED004A4781 /* SecondViewController.swift in Sources */,
 				293F12DE20CA0BFD00CEF64E /* Activity3ViewController.swift in Sources */,
+				2932457A211E1EE40097C4EE /* ActivityBaseMovieViewContoller.swift in Sources */,
 				2961465B20C0BDE8009786FD /* Activity2ViewController.swift in Sources */,
 				2916E3E420B395C4004A4781 /* ViewController.swift in Sources */,
 				29324576211E12030097C4EE /* ActivityBaseViewController.swift in Sources */,

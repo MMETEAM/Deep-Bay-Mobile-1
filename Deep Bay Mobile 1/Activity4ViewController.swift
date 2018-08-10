@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Activity4ViewController: ActivityBaseViewController {
+class Activity4ViewController: ActivityBaseMovieViewController {
     override var movieFileName: String { return "Activity4.mov" }
     
     

@@ -11,4 +11,5 @@ import UIKit
 
 class Activity1ViewController: ActivityBaseViewController {
     override var imageFileName: String { return "Activity1.png" }
+    override var textKey: String { return "myAnswer1"}
 }
