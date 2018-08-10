@@ -9,7 +9,7 @@
 import UIKit
 
 class Activity4ViewController: ActivityBaseViewController {
-    override var imageFileName: String { return "Activity4.mov" }
+    override var movieFileName: String { return "Activity4.mov" }
     
     
 }
