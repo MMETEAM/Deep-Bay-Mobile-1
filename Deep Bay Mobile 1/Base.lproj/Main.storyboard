@@ -644,6 +644,9 @@
                                 <state key="normal" title="Take Photo">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="takePhotoButton:" destination="KXT-gV-qHR" eventType="touchUpInside" id="9cL-hM-Aeg"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nW-so-Uay">
                                 <rect key="frame" x="74" y="204" width="620" height="395"/>
@@ -697,7 +700,7 @@
                         <viewLayoutGuide key="safeArea" id="kCT-bt-TA7"/>
                     </view>
                     <connections>
-                        <outlet property="cameraView" destination="9nW-so-Uay" id="mrE-Yh-GNt"/>
+                        <outlet property="cameraView" destination="9nW-so-Uay" id="qG4-Wm-ehp"/>
                         <outlet property="input1" destination="e7c-6n-7FP" id="JS6-Fe-w4J"/>
                         <outlet property="output1" destination="hn9-my-6wD" id="f7y-fD-Ar3"/>
                     </connections>
@@ -852,6 +855,7 @@
         <image name="spotprawn.jpg" width="249" height="202"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9Ia-oh-mAy"/>
         <segue reference="8Sb-4U-EDn"/>
         <segue reference="ynb-fo-wgX"/>
         <segue reference="9QE-qt-6Uc"/>
