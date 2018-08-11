@@ -33,7 +33,7 @@ class ActivityBaseViewController: UIViewController, UINavigationControllerDelega
         // set the text if saved
         if let x = UserDefaults.standard.object(forKey: textKey) as? String
         {
-            output1.text = x;
+            input1.text = x;
         }
         
         // set the image if saved

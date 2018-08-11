@@ -29,7 +29,7 @@ class ActivityBaseMovieViewController: UIViewController, UINavigationControllerD
         super.viewDidLoad()
         
         // set the movie if saved
-//        getImage(imageName: movieFileName)
+        getMovieAndPlay()
     }
     
     // MARK: Actions
@@ -54,20 +54,24 @@ class ActivityBaseMovieViewController: UIViewController, UINavigationControllerD
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        // display the movie
-////
-        // save the movie
+        
+
         let mediaType = info[UIImagePickerControllerMediaType] as! String
         if mediaType == kUTTypeMovie as String, let movieURL = info[UIImagePickerControllerMediaURL] as? URL {
             print("VIDEO URL: \(movieURL)")
+            
+            // save the movie
             DBFileManager.shared.saveMovie(movieURL, movieName: movieFileName)
+            
+            // display the movie
+            playMovie(movieURL)
         }
         dismiss(animated: true, completion: nil)
     }
     
     // MARK: Activity Functions
 
-    func getMovie() {
+    func getMovieAndPlay() {
         if let movie = DBFileManager.shared.retrieveMovie(movieName: movieFileName) {
             playMovie(movie)
         }
@@ -81,15 +85,15 @@ class ActivityBaseMovieViewController: UIViewController, UINavigationControllerD
         self.addChildViewController(moviePlayerViewController)////
         
         // Add your view Frame
-        moviePlayerViewController.view.frame = cameraView.frame
-        
+        moviePlayerViewController.view.frame = CGRect(origin: .zero, size: cameraView.frame.size)
+        moviePlayerViewController.player = moviePlayer
+
         // Add sub view in your view
         cameraView.addSubview(moviePlayerViewController.view)
         
         moviePlayer.play()
         
 //        // Initialize the AVPlayer
-//        moviePlayerViewController.player = moviePlayer
 //
 //        // Present movie player and play when completion
 //        self.present(moviePlayerViewController, animated: false, completion: {
