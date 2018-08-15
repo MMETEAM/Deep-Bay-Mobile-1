@@ -21,7 +21,6 @@
 		2916E45520B4C1F3004A4781 /* Clam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2916E45420B4C1F3004A4781 /* Clam.jpg */; };
 		2916E45720B4C223004A4781 /* mussel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2916E45620B4C223004A4781 /* mussel.jpg */; };
 		2916E45920B4C262004A4781 /* oyster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2916E45820B4C262004A4781 /* oyster.jpg */; };
-		2916E47A20B4DBFF004A4781 /* introductionOld.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2916E45120B3AC4B004A4781 /* introductionOld.mp4 */; };
 		2916E47C20B4E4DB004A4781 /* iPad in Resources */ = {isa = PBXBuildFile; fileRef = 2916E47B20B4E4DB004A4781 /* iPad */; };
 		29324576211E12030097C4EE /* ActivityBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29324575211E12030097C4EE /* ActivityBaseViewController.swift */; };
 		29324578211E13FE0097C4EE /* Activity4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29324577211E13FE0097C4EE /* Activity4ViewController.swift */; };
@@ -34,7 +33,10 @@
 		2961465F20C0C23F009786FD /* seasnails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961465E20C0C23E009786FD /* seasnails.jpg */; };
 		2961466120C0C24A009786FD /* seaurchin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961466020C0C249009786FD /* seaurchin.jpg */; };
 		2961466320C0C262009786FD /* spotprawn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961466220C0C261009786FD /* spotprawn.jpg */; };
-		2961466520C0C27F009786FD /* seastar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2961466420C0C27E009786FD /* seastar.jpg */; };
+		296517402124A6FB000F9AB0 /* introduction.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2965173F2124A6FB000F9AB0 /* introduction.mp4 */; };
+		296517422124A7C4000F9AB0 /* seastar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517412124A7C4000F9AB0 /* seastar.jpg */; };
+		296517442124A823000F9AB0 /* seacucumber.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517432124A823000F9AB0 /* seacucumber.jpg */; };
+		296517462124A880000F9AB0 /* seanudibranch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517452124A87F000F9AB0 /* seanudibranch.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +52,6 @@
 		2916E44920B3A733004A4781 /* Ocean Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Ocean Image.jpg"; path = "../../Deep Bay Research/Website Files/Ocean Image.jpg"; sourceTree = "<group>"; };
 		2916E44D20B3A9D9004A4781 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		2916E44F20B3ABED004A4781 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		2916E45120B3AC4B004A4781 /* introductionOld.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introductionOld.mp4; sourceTree = "<group>"; };
 		2916E45220B3AEB5004A4781 /* Map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Map.jpg; sourceTree = "<group>"; };
 		2916E45420B4C1F3004A4781 /* Clam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Clam.jpg; sourceTree = "<group>"; };
 		2916E45620B4C223004A4781 /* mussel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mussel.jpg; sourceTree = "<group>"; };
@@ -67,8 +68,10 @@
 		2961465E20C0C23E009786FD /* seasnails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasnails.jpg; sourceTree = "<group>"; };
 		2961466020C0C249009786FD /* seaurchin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seaurchin.jpg; sourceTree = "<group>"; };
 		2961466220C0C261009786FD /* spotprawn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spotprawn.jpg; sourceTree = "<group>"; };
-		2961466420C0C27E009786FD /* seastar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seastar.jpg; sourceTree = "<group>"; };
-		2965173E2124A581000F9AB0 /* introduction.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introduction.mp4; sourceTree = "<group>"; };
+		2965173F2124A6FB000F9AB0 /* introduction.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introduction.mp4; sourceTree = "<group>"; };
+		296517412124A7C4000F9AB0 /* seastar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = seastar.jpg; path = ../../seastar.jpg; sourceTree = "<group>"; };
+		296517432124A823000F9AB0 /* seacucumber.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seacucumber.jpg; sourceTree = "<group>"; };
+		296517452124A87F000F9AB0 /* seanudibranch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanudibranch.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,17 +116,18 @@
 				2916E3E520B395C4004A4781 /* Main.storyboard */,
 				29468830211CAF63007AC1EB /* DBFileManager.swift */,
 				2916E45420B4C1F3004A4781 /* Clam.jpg */,
+				2965173F2124A6FB000F9AB0 /* introduction.mp4 */,
 				2916E45220B3AEB5004A4781 /* Map.jpg */,
 				2916E45620B4C223004A4781 /* mussel.jpg */,
 				2916E3FC20B3A072004A4781 /* ShellStartPic.png */,
 				2916E44D20B3A9D9004A4781 /* Button.png */,
-				2965173E2124A581000F9AB0 /* introduction.mp4 */,
-				2916E45120B3AC4B004A4781 /* introductionOld.mp4 */,
 				2916E44920B3A733004A4781 /* Ocean Image.jpg */,
 				2961465C20C0C221009786FD /* rockcrab.jpg */,
+				296517432124A823000F9AB0 /* seacucumber.jpg */,
+				296517452124A87F000F9AB0 /* seanudibranch.jpg */,
 				2961465E20C0C23E009786FD /* seasnails.jpg */,
+				296517412124A7C4000F9AB0 /* seastar.jpg */,
 				2961466020C0C249009786FD /* seaurchin.jpg */,
-				2961466420C0C27E009786FD /* seastar.jpg */,
 				2961466220C0C261009786FD /* spotprawn.jpg */,
 				2916E44720B3A676004A4781 /* Types of Shellfish.jpg */,
 				2916E45820B4C262004A4781 /* oyster.jpg */,
@@ -193,16 +197,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2916E47A20B4DBFF004A4781 /* introductionOld.mp4 in Resources */,
 				2916E47C20B4E4DB004A4781 /* iPad in Resources */,
+				296517402124A6FB000F9AB0 /* introduction.mp4 in Resources */,
 				2916E3EC20B395C6004A4781 /* LaunchScreen.storyboard in Resources */,
 				2916E44A20B3A733004A4781 /* Ocean Image.jpg in Resources */,
 				2916E45520B4C1F3004A4781 /* Clam.jpg in Resources */,
-				2961466520C0C27F009786FD /* seastar.jpg in Resources */,
+				296517422124A7C4000F9AB0 /* seastar.jpg in Resources */,
 				2916E44E20B3A9D9004A4781 /* Button.png in Resources */,
 				2961466320C0C262009786FD /* spotprawn.jpg in Resources */,
 				2916E45920B4C262004A4781 /* oyster.jpg in Resources */,
 				2916E3FD20B3A072004A4781 /* ShellStartPic.png in Resources */,
+				296517442124A823000F9AB0 /* seacucumber.jpg in Resources */,
+				296517462124A880000F9AB0 /* seanudibranch.jpg in Resources */,
 				2961465D20C0C222009786FD /* rockcrab.jpg in Resources */,
 				2916E45320B3AEB5004A4781 /* Map.jpg in Resources */,
 				2916E3E920B395C6004A4781 /* Assets.xcassets in Resources */,

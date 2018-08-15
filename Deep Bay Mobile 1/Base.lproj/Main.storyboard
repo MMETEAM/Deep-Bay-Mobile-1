@@ -382,12 +382,12 @@
                                     <segue destination="u4e-lr-DTJ" kind="show" id="kqr-tE-MwN"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-0D-ClA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seanudibranch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-0D-ClA">
                                 <rect key="frame" x="491" y="645" width="257" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seastar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OUP-36-rUl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seacucumber.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OUP-36-rUl">
                                 <rect key="frame" x="491" y="428" width="257" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -856,15 +856,16 @@
         <image name="mussel.jpg" width="1200" height="900"/>
         <image name="oyster.jpg" width="300" height="225"/>
         <image name="rockcrab.jpg" width="480" height="320"/>
-        <image name="seastar.jpg" width="243" height="208"/>
+        <image name="seacucumber.jpg" width="272" height="185"/>
+        <image name="seanudibranch.jpg" width="1024" height="768"/>
+        <image name="seastar.jpg" width="201" height="251"/>
         <image name="seaurchin.jpg" width="460" height="287"/>
         <image name="spotprawn.jpg" width="249" height="202"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Ia-oh-mAy"/>
         <segue reference="8Sb-4U-EDn"/>
         <segue reference="ynb-fo-wgX"/>
-        <segue reference="9QE-qt-6Uc"/>
+        <segue reference="kqr-tE-MwN"/>
         <segue reference="4i7-VB-qpA"/>
         <segue reference="qlU-7m-wbI"/>
         <segue reference="cjZ-U2-0Lm"/>
