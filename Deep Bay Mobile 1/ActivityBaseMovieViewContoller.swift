@@ -42,7 +42,7 @@ class ActivityBaseMovieViewController: UIViewController, UINavigationControllerD
             imagePickerController.delegate = self
             imagePickerController.sourceType = .camera
             imagePickerController.mediaTypes = [kUTTypeMovie as String]
-            imagePickerController.videoMaximumDuration = 10 // or whatever you want
+            imagePickerController.videoMaximumDuration = 30 // or whatever you want
             imagePickerController.videoQuality = .typeMedium
             imagePickerController.allowsEditing = false
             present(imagePickerController, animated: true, completion: nil)
