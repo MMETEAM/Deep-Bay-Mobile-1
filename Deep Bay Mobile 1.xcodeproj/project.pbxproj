@@ -37,6 +37,7 @@
 		296517422124A7C4000F9AB0 /* seastar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517412124A7C4000F9AB0 /* seastar.jpg */; };
 		296517442124A823000F9AB0 /* seacucumber.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517432124A823000F9AB0 /* seacucumber.jpg */; };
 		296517462124A880000F9AB0 /* seanudibranch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517452124A87F000F9AB0 /* seanudibranch.jpg */; };
+		2965174A2124AB85000F9AB0 /* touchtanks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517492124AB84000F9AB0 /* touchtanks.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		296517412124A7C4000F9AB0 /* seastar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = seastar.jpg; path = ../../seastar.jpg; sourceTree = "<group>"; };
 		296517432124A823000F9AB0 /* seacucumber.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seacucumber.jpg; sourceTree = "<group>"; };
 		296517452124A87F000F9AB0 /* seanudibranch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanudibranch.jpg; sourceTree = "<group>"; };
+		296517492124AB84000F9AB0 /* touchtanks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = touchtanks.jpg; path = ../../touchtanks.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				296517412124A7C4000F9AB0 /* seastar.jpg */,
 				2961466020C0C249009786FD /* seaurchin.jpg */,
 				2961466220C0C261009786FD /* spotprawn.jpg */,
+				296517492124AB84000F9AB0 /* touchtanks.jpg */,
 				2916E44720B3A676004A4781 /* Types of Shellfish.jpg */,
 				2916E45820B4C262004A4781 /* oyster.jpg */,
 				2916E47B20B4E4DB004A4781 /* iPad */,
@@ -212,6 +215,7 @@
 				2961465D20C0C222009786FD /* rockcrab.jpg in Resources */,
 				2916E45320B3AEB5004A4781 /* Map.jpg in Resources */,
 				2916E3E920B395C6004A4781 /* Assets.xcassets in Resources */,
+				2965174A2124AB85000F9AB0 /* touchtanks.jpg in Resources */,
 				2916E3E720B395C4004A4781 /* Main.storyboard in Resources */,
 				2916E45720B4C223004A4781 /* mussel.jpg in Resources */,
 				2961465F20C0C23F009786FD /* seasnails.jpg in Resources */,
