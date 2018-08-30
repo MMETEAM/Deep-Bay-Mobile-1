@@ -324,16 +324,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="touchtanks.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SsP-Cb-Klv">
-                                <rect key="frame" x="0.0" y="143" width="768" height="881"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="touchtanks.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="SsP-Cb-Klv">
+                                <rect key="frame" x="40" y="190" width="689" height="748"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deep Bay's touch tanks are located at the base of the stairs. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sin-Gh-ZGs">
+                                <rect key="frame" x="52" y="853" width="665" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjF-BP-hys">
-                                <rect key="frame" x="20" y="20" width="728" height="99"/>
+                                <rect key="frame" x="40" y="53" width="689" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Deep Bay's touch tanks are located at the base of the stairs. ">
+                                <state key="normal" title="Back to the Touch Tank Activities ">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -860,10 +867,9 @@
         <image name="seastar.jpg" width="201" height="251"/>
         <image name="seaurchin.jpg" width="460" height="287"/>
         <image name="spotprawn.jpg" width="249" height="202"/>
-        <image name="touchtanks.jpg" width="1936" height="2592"/>
+        <image name="touchtanks.jpeg" width="1936" height="2592"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="skl-nC-cTg"/>
         <segue reference="8Sb-4U-EDn"/>
         <segue reference="ynb-fo-wgX"/>
         <segue reference="kqr-tE-MwN"/>
