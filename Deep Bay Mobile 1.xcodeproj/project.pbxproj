@@ -36,7 +36,8 @@
 		296517402124A6FB000F9AB0 /* introduction.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2965173F2124A6FB000F9AB0 /* introduction.mp4 */; };
 		296517442124A823000F9AB0 /* seacucumber.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517432124A823000F9AB0 /* seacucumber.jpg */; };
 		296517462124A880000F9AB0 /* seanudibranch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 296517452124A87F000F9AB0 /* seanudibranch.jpg */; };
-		2965174C2124ADAB000F9AB0 /* touchtanks.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2965174B2124ADAA000F9AB0 /* touchtanks.jpeg */; };
+		29DC5AF921462D360081DE3A /* touchtank2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 29DC5AF821462D350081DE3A /* touchtank2.JPG */; };
+		29DC5AFB21462D9D0081DE3A /* Ocean Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29DC5AFA21462D9C0081DE3A /* Ocean Image.jpg */; };
 		29EA9B1A2138855B00ADFAAE /* seastar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29EA9B192138855900ADFAAE /* seastar.jpg */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +73,8 @@
 		2965173F2124A6FB000F9AB0 /* introduction.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introduction.mp4; sourceTree = "<group>"; };
 		296517432124A823000F9AB0 /* seacucumber.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seacucumber.jpg; sourceTree = "<group>"; };
 		296517452124A87F000F9AB0 /* seanudibranch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seanudibranch.jpg; sourceTree = "<group>"; };
-		2965174B2124ADAA000F9AB0 /* touchtanks.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touchtanks.jpeg; sourceTree = "<group>"; };
+		29DC5AF821462D350081DE3A /* touchtank2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = touchtank2.JPG; path = ../../touchtank2.JPG; sourceTree = "<group>"; };
+		29DC5AFA21462D9C0081DE3A /* Ocean Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Ocean Image.jpg"; path = "../../Deep Bay Mobile 6/Deep Bay Mobile 6/Ocean Image.jpg"; sourceTree = "<group>"; };
 		29EA9B192138855900ADFAAE /* seastar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = seastar.jpg; path = "../../Deep Bay Research/Photos & Media/seastar.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				2965173F2124A6FB000F9AB0 /* introduction.mp4 */,
 				2916E45220B3AEB5004A4781 /* Map.jpg */,
 				2916E45620B4C223004A4781 /* mussel.jpg */,
+				29DC5AFA21462D9C0081DE3A /* Ocean Image.jpg */,
 				2916E3FC20B3A072004A4781 /* ShellStartPic.png */,
 				2916E44D20B3A9D9004A4781 /* Button.png */,
 				291266BF2145D6B9000D6532 /* oceanImaage.jpg */,
@@ -131,7 +134,7 @@
 				29EA9B192138855900ADFAAE /* seastar.jpg */,
 				2961466020C0C249009786FD /* seaurchin.jpg */,
 				2961466220C0C261009786FD /* spotprawn.jpg */,
-				2965174B2124ADAA000F9AB0 /* touchtanks.jpeg */,
+				29DC5AF821462D350081DE3A /* touchtank2.JPG */,
 				2916E44720B3A676004A4781 /* Types of Shellfish.jpg */,
 				2916E45820B4C262004A4781 /* oyster.jpg */,
 				2916E47B20B4E4DB004A4781 /* iPad */,
@@ -200,7 +203,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2965174C2124ADAB000F9AB0 /* touchtanks.jpeg in Resources */,
 				2916E47C20B4E4DB004A4781 /* iPad in Resources */,
 				296517402124A6FB000F9AB0 /* introduction.mp4 in Resources */,
 				2916E3EC20B395C6004A4781 /* LaunchScreen.storyboard in Resources */,
@@ -208,6 +210,7 @@
 				2916E45520B4C1F3004A4781 /* Clam.jpg in Resources */,
 				2916E44E20B3A9D9004A4781 /* Button.png in Resources */,
 				2961466320C0C262009786FD /* spotprawn.jpg in Resources */,
+				29DC5AF921462D360081DE3A /* touchtank2.JPG in Resources */,
 				2916E45920B4C262004A4781 /* oyster.jpg in Resources */,
 				2916E3FD20B3A072004A4781 /* ShellStartPic.png in Resources */,
 				296517442124A823000F9AB0 /* seacucumber.jpg in Resources */,
@@ -221,6 +224,7 @@
 				2961465F20C0C23F009786FD /* seasnails.jpg in Resources */,
 				2961466120C0C24A009786FD /* seaurchin.jpg in Resources */,
 				2916E44820B3A676004A4781 /* Types of Shellfish.jpg in Resources */,
+				29DC5AFB21462D9D0081DE3A /* Ocean Image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
